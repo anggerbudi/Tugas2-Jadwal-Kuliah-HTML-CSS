@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+#bg-video {
+    object-fit: cover;
+    position: fixed;
+    max-width: 100%;
+    z-index: -10;
+}
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: url(wallpaper_minecraft_fireplace_3840x2160.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: overlay;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.aboutIsi {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 110px;
+    background: #fff9;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .kiri {
+    position: relative;
+    background: #0008;
+    padding: 40px;
+}
+
+.container .kanan {
+    position: relative;
+    background: #fff8;
+    padding: 40px;
+}
+
+.profil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profil .foto {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profil .foto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profil h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profil h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.kontak {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.kontak ul {
+    position: relative;
+}
+
+.kontak ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.kontak ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+}
+
+.kontak ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.kontak.edukasi li {
+    margin-bottom: 15px;
+}
+
+.kontak.edukasi h5 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.kontak.edukasi h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.kontak.edukasi h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.kontak.bahasa .persen {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.kontak.bahasa .persen div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.tentang {
+    margin-bottom: 50px;
+
+}
+
+.tentang:last-child {
+    margin-bottom: 0;
+}
+
+.judul2 {
+    color: #081921;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #081921;
+}
+
+.tentang .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.tentang .box .tahun {
+    min-width: 150px;
+}
+
+.tentang .box .tahun h5 {
+    text-transform: uppercase;
+    color: #081921;
+    font-weight: 600;
+}
+
+.tentang .box .text h4 {
+    text-transform: uppercase;
+    color: #081921;
+    font-size: 16px;
+}
+
+.skill .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill .box h4 {
+    text-transform: uppercase;
+    color: #081921;
+    font-weight: 500;
+}
+
+.skill .box .persen {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skill .box .persen div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.minat ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.minat ul li {
+    list-style: none;
+    color: #081921;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.minat ul li .fa {
+    color: #081921;
+    font-size: 18px;
+    width: 20px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .minat {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tentang .box {
+        flex-direction: column;
+    }
+    .tentang .box .tahun {
+        margin-bottom: 5px;
+    }
+    .minat ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skill .box {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
