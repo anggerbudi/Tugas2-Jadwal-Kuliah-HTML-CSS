@@ -4,7 +4,7 @@ Tugas berikut adalah tugas 2 yang diberikan pada pertemuan teori ke 3 dengan tem
 
 ## Preview
 
-Untuk melihat website tanpa mengunduh file dapat membuka link hosting berikut [Jadwalku](anggerbudi.github.io).
+Untuk melihat website tanpa mengunduh file dapat membuka link hosting berikut [Jadwalku](https://anggerbudi.github.io/).
 
 ## Halaman Index
 
